@@ -10,20 +10,20 @@
         <FrameLayout
             android:id="@+id/fl_tab_container"
             android:layout_width="match_parent"
-            android:layout_marginBottom="@dimen/bottombar_wechat_height"
+            android:layout_marginBottom="@dimen/bottom_navigation_height"
             android:layout_height="match_parent"/>
 
-        <com.gavin.demo.app.view.BottomBar
+        <com.gavin.demo.features.style.bottombar.BottomBar
             android:id="@+id/bottomBar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/bottombar_wechat_height"
+            android:layout_height="@dimen/bottom_navigation_height"
             android:layout_gravity="bottom"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:background="@drawable/actionbar_shadow_up"
             android:layout_gravity="bottom"
-            android:layout_marginBottom="@dimen/bottombar_wechat_height"
+            android:layout_marginBottom="@dimen/bottom_navigation_height"
             android:layout_height="wrap_content"/>
 
     </FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:fitsSystemWindows="true">
+
+        <com.gavin.demo.features.style.tag.TagGroup
+            android:id="@+id/tag_group"
+            style="@style/TagGroup"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>
