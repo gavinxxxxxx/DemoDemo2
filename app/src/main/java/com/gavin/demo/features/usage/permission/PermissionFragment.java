@@ -17,10 +17,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.gavin.demo.app.Constants;
 import com.gavin.demo.R;
+import com.gavin.demo.app.Constants;
 import com.gavin.demo.databinding.FragmentPermissionBinding;
-import com.gavin.demo.test.TestFragment;
+import com.gavin.demo.test.RecyclerFragment;
+import com.gavin.demo.test.RefreshFragment;
 import com.gavin.demo.utils.SPUtil;
 
 import me.yokeyword.fragmentation.SupportFragment;
@@ -76,7 +77,7 @@ public class PermissionFragment extends SupportFragment {
                 || !(ContextCompat.checkSelfPermission(_mActivity, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED)) {
             requestPermission();
         } else {
-            startWithPop(TestFragment.newInstance());
+            startWithPop(RecyclerFragment.newInstance());
         }
     }
 
