@@ -77,7 +77,12 @@ public class PermissionFragment extends SupportFragment {
                 || !(ContextCompat.checkSelfPermission(_mActivity, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED)) {
             requestPermission();
         } else {
-            startWithPop(RecyclerFragment.newInstance());
+            binding.root.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    startWithPop(RecyclerFragment.newInstance());
+                }
+            }, 300);
         }
     }
 

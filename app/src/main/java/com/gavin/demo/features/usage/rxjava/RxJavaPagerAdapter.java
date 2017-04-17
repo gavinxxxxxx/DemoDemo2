@@ -18,6 +18,7 @@ public class RxJavaPagerAdapter extends FragmentPagerAdapter {
             "线程控制：Scheduler",
             "Hello World",
             "操作符",
+            "RE",
     };
 
     public RxJavaPagerAdapter(FragmentManager fragmentManager) {
@@ -39,6 +40,8 @@ public class RxJavaPagerAdapter extends FragmentPagerAdapter {
                 return RxJavaFragment5.newInstance();
             case 5:
                 return RxJavaFragment6.newInstance();
+            case 6:
+                return ReRxJavaFragment.newInstance();
             default:
                 return null;
         }

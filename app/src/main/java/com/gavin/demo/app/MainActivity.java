@@ -16,6 +16,7 @@ import com.gavin.demo.features.style.tag.TagFragment;
 import com.gavin.demo.features.usage.dagger2.Dagger2Fragment;
 import com.gavin.demo.features.usage.permission.PermissionFragment;
 import com.gavin.demo.features.usage.retrofit.RetrofitFragment;
+import com.gavin.demo.features.usage.rxjava.ReRxJavaFragment;
 import com.gavin.demo.features.usage.rxjava.RxJavaFragment;
 import com.gavin.demo.features.usage.vector.VectorFragment;
 
@@ -44,7 +45,8 @@ public class MainActivity extends SupportActivity implements NavigationView.OnNa
         EventBus.getDefault().register(this);
 
         if (savedInstanceState == null) {
-            loadRootFragment(R.id.holder, PermissionFragment.newInstance());
+//            loadRootFragment(R.id.holder, PermissionFragment.newInstance());
+            loadRootFragment(R.id.holder, ReRxJavaFragment.newInstance());
         }
 
         initNavigationView();
@@ -96,7 +98,7 @@ public class MainActivity extends SupportActivity implements NavigationView.OnNa
             public void run() {
                 startWithPop(fragment);
             }
-        }, 380);
+        }, 300);
     }
 
     @Override
